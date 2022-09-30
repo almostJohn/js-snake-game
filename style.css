@@ -1,14 +1,24 @@
 /** @format */
 
-body {
-	text-align: center;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	font-size: 50px;
-	background-color: #2f3136;
+* {
+	box-sizing: border-box;
 }
 
-h1 {
-	color: #5865f2;
+html,
+body {
+	background-color: #000;
+	height: 100%;
+}
+
+body {
+	background: 222;
+	background: radial-gradient(#333, #111);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	font: 100%/1.5 sans-serif;
+	overflow: hidden;
 }
 
 #game-container {
@@ -16,28 +26,35 @@ h1 {
 }
 
 #snake-board {
-	background-color: #2f3136;
-	border: 3px solid #5865f2;
-	border-radius: 15px;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
 }
 
 #score-text {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	font-size: 50px;
-	color: #5865f2;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 5px;
+	text-align: center;
 }
 
 #reset-btn {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font: 100%/1.5 sans-serif;
 	font-size: 22px;
-	color: #5865f2;
+	font-weight: bold;
+	color: white;
+	background-color: #23272a;
 	width: 100px;
 	height: 50px;
-	border: 3px solid #5865f2;
-	border-radius: 15px;
+	border: 0;
+	text-align: center;
 	cursor: pointer;
 	transform: all 200ms ease;
-	background-color: #2f3136;
 }
 
 #reset-btn:hover {

@@ -1,10 +1,12 @@
 /** @format */
 
 const Color = {
-	Blurple: "#5865f2",
-	Green: "#57F287",
-	Pink: "#EB459E",
-	Greyscale: "#2f3136",
+	Brown: "#582812",
+	ForestGreen: "#228C22",
+	Green: "#00FF00",
+	Blurple: "#5865F2",
+	White: "#FFFFFF",
+	Grey: "#23272A",
 };
 
 const snakeBoard = document.querySelector("#snake-board");
@@ -58,7 +60,7 @@ function nextTick() {
 }
 
 function clearBoard() {
-	context.fillStyle = Color.Greyscale;
+	context.fillStyle = Color.Grey;
 	context.fillRect(0, 0, gameWidth, gameHeight);
 }
 
@@ -73,7 +75,9 @@ function createFood() {
 }
 
 function drawFood() {
-	context.fillStyle = Color.Pink;
+	context.shadowColor = Color.ForestGreen;
+	context.shadowBlur = 15;
+	context.fillStyle = Color.Green;
 	context.fillRect(foodX, foodY, unitSize, unitSize);
 }
 
@@ -92,7 +96,9 @@ function moveSnake() {
 }
 
 function drawSnake() {
-	context.fillStyle = Color.Green;
+	context.shadowColor = Color.Grey;
+	context.shadowBlur = 15;
+	context.fillStyle = Color.White;
 
 	for (const part of snake) {
 		context.fillRect(part.x, part.y, unitSize, unitSize);
@@ -170,10 +176,12 @@ function checkGameOver() {
 }
 
 function displayGameOver() {
-	context.font = "50px MV Boli";
-	context.fillStyle = Color.Blurple;
+	context.font = "bold 50px sans-serif";
+	context.shadowColor = Color.Grey;
+	context.shadowBlur = 15;
+	context.fillStyle = Color.White;
 	context.textAlign = "center";
-	context.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
+	context.fillText("GAME OVER", gameWidth / 2, gameHeight / 2);
 	running = false;
 }
 
