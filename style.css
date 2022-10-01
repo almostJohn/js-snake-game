@@ -1,5 +1,7 @@
 /** @format */
 
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
 * {
 	box-sizing: border-box;
 }
@@ -17,7 +19,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
-	font: 100%/1.5 sans-serif;
+	font-family: "Muli", sans-serif;
+	font: 100%/1.5;
 	overflow: hidden;
 }
 
@@ -25,7 +28,7 @@ body {
 	text-align: center;
 }
 
-#snake-board {
+#game-board {
 	bottom: 0;
 	left: 0;
 	margin: auto;
@@ -37,14 +40,17 @@ body {
 
 #score-text {
 	color: white;
-	font-size: 25px;
+	font-family: "Muli", sans-serif;
+	font: 100%/1.5;
+	font-size: 50px;
 	font-weight: bold;
-	padding-top: 5px;
+	padding-top: 100px;
 	text-align: center;
 }
 
 #reset-btn {
-	font: 100%/1.5 sans-serif;
+	font-family: "Muli", sans-serif;
+	font: 100%/1.5;
 	font-size: 22px;
 	font-weight: bold;
 	color: white;
