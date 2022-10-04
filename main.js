@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 	let fadeSpeed = 5000;
 	let fadeExponential = 1.024;
 	const contrastIncrease = 0.5;
-	const color = "#23272A";
+	const color = "#FFFFFF";
 
 	const grid = document.querySelector(".grid");
 	for (let i = 0; i < width * height; i++) {

@@ -10,7 +10,7 @@ body {
 
 body {
 	--size: 15px;
-	--color: #23272a;
+	--color: #fff;
 	font-family: "Muli", sans-serif;
 	color: var(--color);
 	background-color: #5865f2;
